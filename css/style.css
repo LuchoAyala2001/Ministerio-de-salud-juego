@@ -105,12 +105,15 @@ footer{
 
 @media screen and (max-width: 1024px){
     main{
-        height: auto;
+        height: 1000px;
     }
 
 }
 
 @media screen and (max-width: 768px){
+    main{
+        height: auto;
+    }
 .titulo{
     font-size: 1.5vh;
     
@@ -119,12 +122,15 @@ footer{
         font-size: 20px;
 }
 .diente{
-    width: 100%;
+    width: 400px;
 }
 .opcion{
     font-size: 15px;
 }
 .logo{
     width: 200px;
+}
+footer{
+    height: 400px;
 }
 }

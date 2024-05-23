@@ -41,7 +41,7 @@ main{
     background-color: #E8EDDF;
     border-style:double;
     position: relative;
-    height: 750px;
+    height: 780px;
     
 }
 .imagen{
@@ -99,4 +99,32 @@ footer{
     font-family: encode;
     color: #009AAE;
     font-size: 2vh;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 1024px){
+    main{
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+.titulo{
+    font-size: 1.5vh;
+    
+}
+.pregunta{
+        font-size: 20px;
+}
+.diente{
+    width: 100%;
+}
+.opcion{
+    font-size: 15px;
+}
+.logo{
+    width: 200px;
+}
 }

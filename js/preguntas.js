@@ -8,5 +8,6 @@ let preguntas = [
         pregunta:"¿Cuanto tiempo dura el lavado de dientes?",
         respuestaCorrecta: "2-5 minutos",
         respuestaIncorrecta:["1 hora", "10 segundos","30 minutos"],
-    }
+    },
+    
 ]

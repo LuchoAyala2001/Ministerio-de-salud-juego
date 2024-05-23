@@ -1,0 +1,102 @@
+@font-face {
+    font-family: titulo;
+    src: url(../Fonts/Minecrafter.Alt.ttf);
+}
+@font-face {
+    font-family: encode;
+    src: url(../Fonts/EncodeSans-VariableFont_wdth\,wght.ttf);
+}
+.cuerpo{
+    background-color: #009AAE;
+    
+    
+}
+
+header{
+   display: flex;
+   align-items: center;
+   box-shadow: 0 5px 5px 0px rgb(65 64 66);
+   margin-bottom: 5px;
+   background-color: #E8EDDF;
+   justify-content: space-around;
+   
+}
+.logo{
+    width: 300px;
+    
+}
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo{
+    font-family: encode;
+    color: #009AAE;
+    font-size: 3vh;
+}
+
+/*Main*/
+main{
+    background-color: #E8EDDF;
+    border-style:double;
+    position: relative;
+    height: 750px;
+    
+}
+.imagen{
+    display: flex;   
+    justify-content: center;  
+}
+.diente{
+    width: 500px;
+}
+
+
+.juego{
+    text-align: center;    
+    display: flex;
+    flex-direction: column;
+}
+.pregunta{
+    font-family: titulo;
+    font-size: 35px;
+    color: #009AAE;
+}
+.opcion{
+    list-style: none;
+    font-size: 20px;
+    border-style:solid ;
+    margin-top: 25px;
+    border-radius: 2vh;
+    font-family: titulo;
+    background-color: #009AAE ;
+    color: #E8EDDF;
+    cursor: pointer;
+}
+
+.opcion:hover{
+    background-color: #E8EDDF ;
+    color: #009AAE;
+}
+/*footer*/
+footer{
+    background-color: #E8EDDF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+    margin-top: 12px;
+
+    
+   
+    
+}
+.logo-footer{
+    width: 60px;
+}
+.pie-parrafo{
+    font-family: encode;
+    color: #009AAE;
+    font-size: 2vh;
+}

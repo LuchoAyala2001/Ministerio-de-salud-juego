@@ -19,8 +19,5 @@ let preguntas = [
         respuestaCorrecta:"No pueden nacer con caries pero si con alguna malformacion",
         respuestaIncorrecta:["Si pueden nacer con caries", "Si tienes una mala higiene te pueden salir con caries", "Las caries se quedan pegadas a las encias por ende se traspasan a los nuevos dientes"],
     },
-    {
-        pregunta:"Antes de lavarse los dientes es mejor mojar el cepillo",
-        respuestaCorrecta:"No, mojando el cepillo solo conseguiras que la pasta de dientas pierda su fuerza y no consiga arrastrar bien la suciedad "
-    }
+ 
 ]

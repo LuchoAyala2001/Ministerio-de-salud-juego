@@ -23,9 +23,11 @@
     align-items: center;
     width: 100%;
     font-family: encode;
-    margin: 10px;
     color: #009AAE;
     margin-bottom: 20px;
+    background-color: #E8EDDF;
+    box-shadow: 0 5px 5px 0px rgb(65 64 66);
+    padding: 10px;
 }
 .encabezado-index h1, .encabezado-index h2{
     font-size: 3vh;
@@ -65,15 +67,15 @@
 
 
 /*Juego*/
-header{
+.encabezado-juego{
    display: flex;
    align-items: center;
    box-shadow: 0 5px 5px 0px rgb(65 64 66);
    margin-bottom: 5px;
    background-color: #E8EDDF;
    justify-content: space-around;
-   
 }
+
 .logo{
     width: 300px;
     
@@ -171,30 +173,33 @@ footer{
         width: 500px;
         margin-bottom: 50px;
     }
-
+    .encabezado-index{
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer{
+    flex-direction: column;
+    gap: 30px;
+    }
 }
 
 @media screen and (max-width: 768px){
     /*index*/
+
+
     .body-index{
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    .encabezado-index h1, .encabezado-index h2{
-        font-size: 1vh;
-    }
     .pac-man{
         width: 300px;
         margin-bottom: 50px;
     }
-    .logo-region{
-        width: 100px;
-    }
-    .pie-parrafo{
-        font-size: 1vh;
-    }
     /*Juego*/
+    .encabezado-juego{
+        flex-direction: column;
+    }
     .cuerpo-juego{
         height: auto;
     }
@@ -214,9 +219,7 @@ footer{
 .logo{
     width: 200px;
 }
-footer{
-    height: 400px;
-}
+
 }
 
 @media screen and (max-width: 384px){
@@ -236,8 +239,3 @@ footer{
 
 }
 
-@media screen and (max-height: 850px){
-    footer{
-        height: 200px;
-    }
-}

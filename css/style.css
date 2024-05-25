@@ -6,12 +6,65 @@
     font-family: encode;
     src: url(../Fonts/EncodeSans-VariableFont_wdth\,wght.ttf);
 }
+@font-face {
+    font-family: inicio;
+    src: url(../Fonts/04B_30__.TTF);
+}
 .cuerpo{
     background-color: #009AAE;
     
     
 }
 
+/*index*/
+.encabezado-index{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: encode;
+    margin: 10px;
+    color: #009AAE;
+    margin-bottom: 20px;
+}
+.encabezado-index h1, .encabezado-index h2{
+    font-size: 3vh;
+}
+
+.subtitulo-index{
+    font-size: 4vh;
+    font-family: encode;
+    color: #E8EDDF;
+    text-align: center;
+}
+.menu-inicio{
+    background-color: #009AAE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    box-shadow: 5px 10px 5px 5px rgb(65 64 66);
+}
+.inicio{
+    font-size: 5vh;
+    font-family: inicio;
+    color:burlywood;
+    text-decoration: none;
+
+}
+.inicio:hover{
+    color: #E8EDDF;
+}
+.pac-man{
+    width: 750px;
+    margin-bottom: 50px;
+}
+
+
+
+/*Juego*/
 header{
    display: flex;
    align-items: center;
@@ -37,7 +90,7 @@ header{
 }
 
 /*Main*/
-main{
+.cuerpo-juego{
     background-color: #E8EDDF;
     border-style:double;
     position: relative;
@@ -103,15 +156,46 @@ footer{
 
 /*Responsive*/
 
+
 @media screen and (max-width: 1024px){
-    main{
+    .cuerpo-juego{
         height: 1000px;
+    }
+    .encabezado-index img{
+        width: 150px;
+    }
+    .encabezado-index h1, .encabezado-index h2{
+        font-size: 2vh;
+    }
+    .pac-man{
+        width: 500px;
+        margin-bottom: 50px;
     }
 
 }
 
 @media screen and (max-width: 768px){
-    main{
+    /*index*/
+    .body-index{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .encabezado-index h1, .encabezado-index h2{
+        font-size: 1vh;
+    }
+    .pac-man{
+        width: 300px;
+        margin-bottom: 50px;
+    }
+    .logo-region{
+        width: 100px;
+    }
+    .pie-parrafo{
+        font-size: 1vh;
+    }
+    /*Juego*/
+    .cuerpo-juego{
         height: auto;
     }
 .titulo{
@@ -133,4 +217,20 @@ footer{
 footer{
     height: 400px;
 }
+}
+
+@media screen and (max-width: 384px){
+    .encabezado-index img{
+        width: 150px;
+    }
+    .encabezado-index h1, .encabezado-index h2{
+        font-size: 10px;
+    }
+    .pac-man{
+        width: 250px;
+        margin-bottom: 50px;
+    }
+    .pie-parrafo{
+        font-size: 12px;
+    }
 }

@@ -3,47 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego de Preguntas y Respuestas</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Bienvenidos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/preguntas.js"></script>
-    <script defer src="js/index.js"></script>
-    
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="cuerpo ">
-
-    <header class="container">
-       <div><img src="https://gba.gob.ar/imagenes/logo_gba_footer_blanco.svg" alt="Logo Provincia de buenos Aires" class="logo"></div> 
-        <h1 class="titulo">Ministerio de salud </h1>
-      
-     
+<body class="body-index">
+    <header>
+        <div class="encabezado-index container-row">
+            <img src="https://gba.gob.ar/imagenes/logo_gba_footer_blanco.svg" alt="Logo Provincia de buenos Aires" class="logo">
+            <h1>Ministerio de salud</h1>
+            <h2>Promotores de salud</h2>
+        </div>
     </header>
     <main class="container">
-        <section class="imagen">
-            <img src="img/Diente.png" alt="Diente" class="diente">
-        </section>
-        <section class="juego">
-            <div class="pregunta" id="pregunta"> <p>Pregunta</p></div>
-            <div class="opciones">
-                <ul>
-                    <li class="opcion" id="opcion1" onclick="seleccionarOpcion(0)">Pregunta 1</li>
-                    <li class="opcion" id="opcion2" onclick="seleccionarOpcion(1)">Pregunta 2</li>
-                    <li class="opcion" id="opcion3" onclick="seleccionarOpcion(2)">Pregunta 3</li>
-                    <li class="opcion" id="opcion4" onclick="seleccionarOpcion(3)">Pregunta 4</li>                   
-                </ul>
-            </div>
-        </section>
+        
+        <div class="menu-inicio">
+            <h2 class="subtitulo-index">¡Bienvenidos!</h2> 
+            <nav class="navegador">
+            <a href="html/Juego.html" class="inicio">INICIO</a>
+        </nav>
+        
+        <img src="https://i.ibb.co/yNwDYMj/CvGT.gif" alt="Pac-man" class="pac-man">
+    </div>
     </main>
-
     <footer class="container-row">
-        <div><img src="https://www.gba.gob.ar/imagenes/social/provincia_icon_Footer.png" alt="Logo Provincia de buenos Aires" class="logo-footer"></div>       
+        <div><img src="img/region sexta.png" alt="Logo Provincia de buenos Aires" class="logo-region"></div>       
            
-            <h2 class="titulo"> Promotores de salud </h2>
+            <h2 class="pie-parrafo"> Promotores de salud </h2>
             <h2 class="pie-parrafo"> Juego de preguntas y respuestas </h2>
         
     </footer>
-
 </body>
 </html>

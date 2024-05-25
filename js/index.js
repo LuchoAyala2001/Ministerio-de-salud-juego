@@ -3,6 +3,7 @@ let indexPregunta = 0;
 cargarPregunta(indexPregunta);
 let puntaje = 0;
 
+
 function cargarPregunta (index){
     objetoPregunta = preguntas[index]
     opciones = [...objetoPregunta.respuestaIncorrecta]
@@ -36,18 +37,29 @@ async function seleccionarOpcion (index){
             icon: "error"
           });
     }
-
+    aprobado = puntaje >= (preguntas.length / 2);
+    desaprobado = puntaje < (preguntas.length / 2);
    indexPregunta++;
-   if (indexPregunta >= preguntas.length){
+   if (indexPregunta >= preguntas.length && aprobado){
     indexPregunta= 0;
     await Swal.fire({
-        title: "Juego terminado",
+        title: "Felicitaciones",
+        text: `Tu puntaje es: "${puntaje}"/${preguntas.length}`,
+        icon: "success"
+      });
+      indexPregunta = 0;
+      puntaje = 0;
+   }
+   if (indexPregunta >= preguntas.length && desaprobado){
+    indexPregunta= 0;
+    await Swal.fire({
+        title: "Sigue intentandolo :)",
         text: `Tu puntaje es: "${puntaje}"/${preguntas.length}`,
         icon: "error"
       });
       indexPregunta = 0;
       puntaje = 0;
-   }
+    }
    cargarPregunta(indexPregunta)
 
 }

@@ -32,7 +32,7 @@ async function seleccionarOpcion (index){
           puntaje++;
     }else{
         await Swal.fire({
-            title: "Respues incorrecta",
+            title: "Respuesta incorrecta",
             text: `La respuesta correcta es: "${objetoPregunta.respuestaCorrecta}"`,
             icon: "error"
           });

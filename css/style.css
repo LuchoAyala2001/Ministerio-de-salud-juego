@@ -1,6 +1,6 @@
 @font-face {
     font-family: titulo;
-    src: url(../Fonts/Minecrafter.Alt.ttf);
+    src: url(../Fonts/Rollback\ \(oblique\).ttf);
 }
 @font-face {
     font-family: encode;
@@ -10,11 +10,15 @@
     font-family: inicio;
     src: url(../Fonts/04B_30__.TTF);
 }
+@font-face {
+    font-family: preguntas;
+    src: url(../Fonts/LEMONMILK-Light.otf);
+}
 .cuerpo{
     background-color: #009AAE;
-    
-    
+       
 }
+
 
 /*index*/
 .encabezado-index{
@@ -124,7 +128,7 @@
     border-style:solid ;
     margin-top: 25px;
     border-radius: 2vh;
-    font-family: titulo;
+    font-family: juego;
     background-color: #009AAE ;
     color: #E8EDDF;
     cursor: pointer;

@@ -10,10 +10,12 @@
     font-family: inicio;
     src: url(../Fonts/04B_30__.TTF);
 }
+@font-face {
+    font-family: juego;
+    src: url(../Fonts/I\ AM\ A\ .otf);
+}
 .cuerpo{
     background-color: #009AAE;
-    
-    
 }
 
 /*index*/
@@ -124,7 +126,7 @@
     border-style:solid ;
     margin-top: 25px;
     border-radius: 2vh;
-    font-family: titulo;
+    font-family: juego;
     background-color: #009AAE ;
     color: #E8EDDF;
     cursor: pointer;

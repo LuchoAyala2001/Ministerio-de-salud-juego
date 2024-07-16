@@ -44,7 +44,7 @@ async function seleccionarOpcion (index){
     indexPregunta= 0;
     await Swal.fire({
         title: "Felicitaciones",
-        text: `Tu puntaje es: "${puntaje}"/${preguntas.length}`,
+        text: `Tu puntaje es: ${puntaje}/${preguntas.length}`,
         icon: "success"
       });
       indexPregunta = 0;
@@ -54,7 +54,7 @@ async function seleccionarOpcion (index){
     indexPregunta= 0;
     await Swal.fire({
         title: "Sigue intentandolo :)",
-        text: `Tu puntaje es: "${puntaje}"/${preguntas.length}`,
+        text: `Tu puntaje es: ${puntaje}/${preguntas.length}`,
         icon: "error"
       });
       indexPregunta = 0;
